@@ -53,17 +53,18 @@
 #form .form-item {
 }
 
-#form .form__content .btn{
+#form .form__content .btn, .buttons .form__content .btn{
     background: #009688;
     outline: #009688;
     border: 1px solid #009688;
 
-    
 }
 
-#form .form__content .btn:hover{
+#form .form__content .btn:hover, .buttons .form__content .btn:hover{
     background: #374246;
     outline: #374246;
     border: 1px solid #374246;
 }
+
+
 

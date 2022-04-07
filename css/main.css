@@ -164,6 +164,15 @@ legend {
   padding-top: 52px;
   margin-bottom: 60px; }
 
+#main .slider .carousel-inner {
+  height: 600px; }
+
+#main .slider .carousel-inner img {
+  object-fit: cover; }
+
+#main .slider .carousel {
+  height: 600px; }
+
 #main #form {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -205,12 +214,12 @@ legend {
 #form .form__top > * + * {
   margin-left: 20px; }
 
-#form .form__content .btn {
+#form .form__content .btn, .buttons .form__content .btn {
   background: #009688;
   outline: #009688;
   border: 1px solid #009688; }
 
-#form .form__content .btn:hover {
+#form .form__content .btn:hover, .buttons .form__content .btn:hover {
   background: #374246;
   outline: #374246;
   border: 1px solid #374246; }
@@ -243,5 +252,73 @@ legend {
 
 #footer .col__coopyright {
   color: #fff; }
+
+#main .buttons {
+  padding-bottom: 50px; }
+
+#main .buttons .button {
+  display: block;
+  width: 100%;
+  font-weight: 700; }
+
+#main .buttons .button.btn-height {
+  line-height: 66px; }
+
+#main .buttons .button:hover {
+  background: #009688;
+  color: #fff; }
+
+#main .buttons .button.btn-center {
+  background: #009688;
+  color: #fff; }
+
+#main .buttons .button.btn-center:hover {
+  background: #374246;
+  border-color: #374246; }
+
+#main .buttons .modal-dialog {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 650px;
+  margin: 1.75rem auto;
+  width: 50%;
+  text-align: left; }
+
+#main .buttons .modal-dialog label {
+  font-weight: 700; }
+
+.modal-dialog *:focus {
+  border-color: #009688;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(57, 158, 119, 0.25); }
+
+#main .buttons .modal-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+#main .buttons .modal-dialog .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  outline: none; }
+
+.button {
+  background: #ffffff;
+  border: 2px solid #009688;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 20px;
+  line-height: 165.5%;
+  text-align: center;
+  letter-spacing: 0.06em; }
+  .button:focus {
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25); }
+
+.modal-title {
+  font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,69 @@
+#main .buttons {
+  padding-bottom: 50px;
+}
+
+#main .buttons .button {
+  display: block;
+  width: 100%;
+
+  font-weight: 700;
+}
+#main .buttons .button.btn-height {
+  line-height: 66px;
+}
+
+#main .buttons .button:hover {
+  background: #009688;
+  color: #fff;
+}
+
+#main .buttons .button.btn-center {
+  background: #009688;
+  color: #fff;
+}
+
+#main .buttons .button.btn-center:hover {
+  background: #374246;
+  border-color: #374246;
+}
+
+#main .buttons .modal-dialog {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 650px;
+  margin: 1.75rem auto;
+  width: 50%;
+
+  text-align: left;
+}
+
+#main .buttons .modal-dialog label {
+  font-weight: 700;
+}
+
+.modal-dialog *:focus{
+    
+        border-color: #009688;
+          outline: 0;
+          box-shadow: 0 0 0 0.25rem rgba(57, 158, 119, 0.25);
+      
+}
+
+#main .buttons .modal-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#main .buttons .modal-dialog .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  outline: none;
+}
+
+

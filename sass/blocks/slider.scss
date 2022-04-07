@@ -1,4 +1,18 @@
 #main .slider {
   padding-top: 52px;
   margin-bottom: 60px;
+
+  
+}
+
+#main .slider .carousel-inner{
+  height: 600px;
+}
+
+#main .slider .carousel-inner img{
+  object-fit: cover;
+}
+
+#main .slider .carousel{
+  height: 600px;
 }
