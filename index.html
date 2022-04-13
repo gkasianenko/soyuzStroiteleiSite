@@ -20,7 +20,7 @@
     />
     <link
       rel="stylesheet"
-      href="./bootstrap-5.1.3-dist/css/bootstrap.min.css"
+      href="./bootstrap-5.1.3-dist/css/bootstrap.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/media.css" />
@@ -67,12 +67,15 @@
 
   <body>
     <header id="header">
-      <nav class="header__nav navbar navbar-expand-md fixed-top">
+      <nav class="header__nav navbar navbar-expand-lg fixed-top">
         <div class="container">
           <div class="header__content">
             <a class="navbar-brand">
               <img src="./img/logo/logo (1).png" alt="Logo" />
             </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto" id="horizontal-multilevel-menu">
                 <li>
@@ -148,7 +151,7 @@
                     </ul>
                   </div>
                 </li>
-                <li>
+              <li>
                   <div class="dropdown show">
                     <a
                       class="nav-link dropdown-toggle"
@@ -222,7 +225,7 @@
                     </ul>
                   </div>
                 </li>
-                <li>
+              <!--   <li>
                   <div class="dropdown show">
                     <a
                       class="nav-link dropdown-toggle"
@@ -261,9 +264,12 @@
                       </li>
                     </ul>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
+
+         
+            
           </div>
         </div>
       </nav>
@@ -283,6 +289,9 @@
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-item__title">
+                  <p>Выставка строительных, отделочных материалов и инженерного оборудования Build Ural 2022.</p>
+                </div>
               </div>
               <div class="carousel-item">
                 <img
@@ -290,6 +299,9 @@
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-item__title">
+                  <p>Выставка строительных, отделочных материалов и инженерного оборудования Build Ural 2022.</p>
+                </div>
               </div>
               <div class="carousel-item">
                 <img
@@ -297,6 +309,9 @@
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-item__title">
+                  <p>Выставка строительных, отделочных материалов и инженерного оборудования Build Ural 2022.</p>
+                </div>
               </div>
             </div>
             <button
@@ -444,7 +459,7 @@
                 <!-- Button trigger modal -->
                 <button
                 type="button"
-                class="button btn"
+                class="button btn-height-3 btn"
                 data-bs-toggle="modal"
                 data-bs-target="#buyMaterials"
               >
@@ -557,7 +572,7 @@
         </div>
       </section>
 
-      <section id="form">
+     <!-- <section id="form">
         <div class="container">
           <h2>
             Требуется консультация? Обратитесь в наш сервис поддержки <br />или
@@ -603,7 +618,107 @@
             </button>
           </form>
         </div>
+      </section> -->
+      <section class="title">
+        <div class="container">
+          <h1 class="title-h1">Союз Строителей: заказать кран в аренду в Москве и в любой точке России</h1>
+        </div>
       </section>
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__content">
+            <h2 class="title-h2">Преимущества работы с <b>Союзом Строителей</b></h2>
+            <div class="benefits__wrapper">
+              <div class="row">
+                <div class="col-lg-4 col-sm-12 col-12 mb-3 text-center">
+                  <div class="benefits__item">
+                    <img src="../img/logo/icon_pre_1.svg" alt="Преимущество">
+                    <p class="benefits__title">Принцип одного окна</p>
+                    <p class="benefits__desc">Возьмем на себя весь процесс поиска Исполнителей грузоподъемных услуг и взаимодействия с ними.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-12 mb-3 text-center">
+                  <div class="benefits__item">
+                    <img src="../img/logo/icon_pre_3.svg" alt="Преимущество">
+                    <p class="benefits__title">Удобство и прозрачность</p>
+                    <p class="benefits__desc">Работая с сервисом Союза Строителей, Вы обеспечите удобство и прозрачность процесса выбора Исполнителей грузоподъемных услуг.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-12 mb-3 text-center">
+                  <div class="benefits__item">
+                    <img src="../img/logo/icon_pre_2.svg" alt="Преимущество">
+                    <p class="benefits__title">Экономия времени и затрат</p>
+                    <p class="benefits__desc">С Союзом Строителей вы получите оперативный доступ к надежным и проверенным исполнителям грузоподъемных услуг на самых выгодных условиях.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="call-form">
+        <div class="container">
+          <h2 class="title-h1">Требуется консультация по подбору кранов - обратитесь в наш сервис в разделе «дополнительные услуги» или закажите обратный звонок</h2>
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <p class="call-form__info">Закажите обратный звонок</p>
+            </div>
+            <div class="col-lg-7">
+              <form class="d-flex justify-content-between form">
+                <input class="form-control" type="text">
+                <button class="btn button button--solid flex-shrink-0">Перезвоните мне</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="how-it-works">
+        <div class="container">
+          <h3 class="title-h2">Как это работает?</h3>
+          <div class="how-it-works__wrapper">
+            <div class="how-it-works__item">
+              <p class="item-name">Создайте Заявку</p>
+              <p class="item-desc">Заполните форму заявки. Мы быстро оповестим о ней Исполнителей</p>
+            </div>
+            <div class="how-it-works__item">
+              <p class="item-name">Собственники кранов сделают предложения на свои услуги</p>
+              <p class="item-desc">Уже через несколько минут Вы начнёте получать предложения от потенциальных Исполнителей
+
+              </p>
+            </div>
+            <div class="how-it-works__item">
+              <p class="item-name">Выберите лучшее предложение</p>
+              <p class="item-desc">Выберите подходящее предложение на основе существенных и важных <br>для вас условий</p>
+            </div>
+            <a class="btn button button--solid" href="#">Заказать грузоподъемные услуги</a>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <h3 class="title-h2">Новости отрасли</h3>
+      </section>
+      <section class="text">
+        <div class="container">
+          <div class="text__content">
+            <p>Сэкономить на строительстве для серьезных компаний - это к нам. С помощью нашего сервиса, первого в России, ваша компания может как сдать в аренду различные типы кранов, так и взять в аренду: башенные краны, краны-манипуляторы, гусеничные краны, автомобильные краны и даже мини-краны.</p>
+          <p>Вам нужно просто зарегистрироваться в нашем сервисе и связаться с персональным менеджером. Либо менеджер свяжется с Вами в само ближайшее время. </p>
+          <div class="text-item">
+            <p>Поиск исполнителей и заказчиков грузоподъемных услуг - наша специфика. А экономия вашей компании - наше преимущество среди других способов на рынке. Всё прозрачно:
+            </p>
+            <ul>
+              <li>Заказчики могут бесплатно составить заявку на аренду грузоподъемной техники, с максимальной конкретикой. И в итоге получить эту технику, проверенную и надежную.</li>
+              <li>а Исполнители бесплатно получают доступ к заявкам Заказчикам. Заказчики у нас только надежные. Мы постарались обезопасить все стороны-участники сделки.</li>
+            </ul>
+          </div>
+
+          <p>Удобный документооборот "Всё в одном окне" - также наше преимущество для удобства и скорости работы с нашим сервисом.</p>
+          <p>И это еще не всё. Следите за новостями! </p>
+          </div>
+          
+        </div>
+      </section>
+    
     </main>
 
     <footer id="footer">
@@ -643,6 +758,9 @@
         </div>
       </div>
     </footer>
-    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    
+<script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+
   </body>
 </html>

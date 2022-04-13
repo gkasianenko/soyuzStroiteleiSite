@@ -16,19 +16,56 @@
   max-height: 52px;
 
   font-weight: 700;
+
+  @media (max-width: $tablet-m) {
+    max-height: 100px;
+  }
 }
 
 #header .navbar-nav {
   margin-left: 80px;
 }
 
+@media (max-width: $tablet) {
+  #header .navbar-nav {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $tablet-m) {
+  #header .navbar-nav {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: $tablet-m) {
+  #header .navbar-nav {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: $tablet-xs) {
+  #header .navbar-nav {
+    margin-left: 0px;
+  }
+}
+
 #header .header__content {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
+
+  width: 100%;
+  align-items: center;
 }
 
 #header .header__content img {
   width: 320px;
+
+  @media (max-width: $tablet-m) {
+    width: 260px;
+  }
 }
 
 #header .header__menu {
@@ -43,6 +80,15 @@
 }
 
 #header .nav-link:hover {
+  outline: none !important;
+  box-shadow: unset !important;
+  color: #ed4f2b;
+  transition: all 0.2s;
+}
+
+#header .nav-link:focus {
+  outline: none !important;
+  box-shadow: unset !important;
   color: #ed4f2b;
   transition: all 0.2s;
 }
@@ -55,6 +101,10 @@
   padding-top: 70px;
   background: #374246;
   position: relative;
+
+  @media (max-width: $tablet-m) {
+    padding-top: 0;
+  }
 }
 
 #header .navbar-brand::before {
@@ -67,6 +117,10 @@
   height: 107px;
   right: 0;
   z-index: -1;
+
+  @media (max-width: $tablet-m) {
+    display: none;
+  }
 }
 
 #header .navbar-brand::after {
@@ -77,6 +131,10 @@
   height: 76px;
   bottom: -12px;
   right: -68px;
+
+  @media (max-width: $tablet-m) {
+    display: none;
+  }
 }
 
 #header .dropdown-menu {
@@ -88,5 +146,33 @@
 
   & .dropdown-item:hover {
     background: #374246;
+  }
+}
+
+#header .navbar-toggler[aria-expanded="false"] {
+  background: url(../img/logo/burger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#header .navbar-toggler[aria-expanded="true"] {
+  background: url(../img/logo/cancel.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#header .navbar-collapse {
+  @media (max-width: $tablet-xs) {
+    padding: 20px;
+    position: absolute;
+    top: 76px;
+    right: 0;
+    width: 100%;
+
+    border: 2px solid #374246;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+
+    background: #0a929c;
   }
 }

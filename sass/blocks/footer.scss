@@ -3,6 +3,12 @@
   padding-bottom: 60px;
 }
 
+@media (max-width: $mobile) {
+  #footer .row > * + * {
+    margin-top: 35px;
+  }
+}
+
 #footer .name {
   font-weight: 700;
 
@@ -21,8 +27,8 @@
   }
 }
 
-#footer .col__content > * + *{
-    margin-top: 10px;
+#footer .col__content > * + * {
+  margin-top: 10px;
 }
 
 #footer .col__contacts {
@@ -35,6 +41,4 @@
 
 #footer .col__coopyright {
   color: #fff;
-
-  
 }
