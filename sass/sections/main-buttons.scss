@@ -8,8 +8,15 @@
 
   font-weight: 700;
 }
-#main .buttons .button.btn-height {
-  line-height: 66px;
+
+
+#main .buttons .button.btn-height-high{
+  min-height: 82px;
+
+  @media (max-width: $tablet){
+    line-height: unset;
+    min-height: 82px;
+  }
 
   @media (max-width: $tablet-m) {
     line-height: 33px;

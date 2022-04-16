@@ -1,0 +1,22 @@
+.button {
+  background: #ffffff;
+  border: 2px solid #009688;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 20px;
+  line-height: 165.5%;
+  text-align: center;
+  letter-spacing: 0.06em; }
+  .button:focus {
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25); }
+
+.button--solid {
+  background: #009688;
+  color: #fff; }
+  .button--solid:hover {
+    background: #374246;
+    border-color: #374246;
+    color: #fff; }
+
+/*# sourceMappingURL=buttons.css.map */

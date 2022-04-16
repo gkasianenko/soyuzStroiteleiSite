@@ -365,13 +365,17 @@ legend {
   width: 100%;
   font-weight: 700; }
 
-#main .buttons .button.btn-height {
-  line-height: 66px; }
+#main .buttons .button.btn-height-high {
+  min-height: 82px; }
+  @media (max-width: 1400px) {
+    #main .buttons .button.btn-height-high {
+      line-height: unset;
+      min-height: 82px; } }
   @media (max-width: 1200px) {
-    #main .buttons .button.btn-height {
+    #main .buttons .button.btn-height-high {
       line-height: 33px; } }
   @media (max-width: 991px) {
-    #main .buttons .button.btn-height {
+    #main .buttons .button.btn-height-high {
       line-height: unset; } }
 
 #main .buttons .button:hover {
