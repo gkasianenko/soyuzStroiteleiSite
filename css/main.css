@@ -237,7 +237,8 @@ legend {
 
 #main .slider .carousel-inner img {
   object-fit: cover;
-  height: 555px; }
+  height: 555px;
+  filter: brightness(0.6); }
 
 #main #form {
   padding-top: 50px;
