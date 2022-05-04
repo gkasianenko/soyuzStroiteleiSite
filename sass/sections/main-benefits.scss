@@ -13,19 +13,16 @@
   padding: 26px 18px;
   text-align: center;
 
-  min-height: 350px;
+  min-height: 310px;
 
   & img {
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media (max-width: $tablet) {
-    min-height: 370px;
-  }
 
   @media (max-width: $tablet-m) {
-    min-height: 420px;
+    min-height: 330px;
   }
 
   @media (max-width: $tablet-xs) {
@@ -39,7 +36,7 @@
   font-size: 21px;
   line-height: 114.5%;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: #3FA9B1;
 }
 
 #main .benefits .benefits__item .benefits__desc {
