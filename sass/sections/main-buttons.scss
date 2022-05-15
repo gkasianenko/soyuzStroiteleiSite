@@ -9,11 +9,10 @@
   font-weight: 700;
 }
 
-
-#main .buttons .button.btn-height-high{
+#main .buttons .button.btn-height-high {
   min-height: 82px;
 
-  @media (max-width: $tablet){
+  @media (max-width: $tablet) {
     line-height: unset;
     min-height: 82px;
   }
@@ -57,6 +56,12 @@
 
 #main .buttons .modal-dialog label {
   font-weight: 700;
+}
+
+#main .buttons .modal-dialog label.error {
+  font-weight: 500;
+  padding-top: 5px;
+  color: red;
 }
 
 .modal-dialog *:focus {
