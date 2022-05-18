@@ -28,20 +28,37 @@
   & .title-h3 {
     font-size: 15px;
     min-height: 55px;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
   }
 
   & img {
-    max-height: 146px;
+    height: 100%;
     object-fit: cover;
+
+    @media (max-width: $mobile-xs) {
+      width: 100%;
+    }
   }
 
   @media (max-width: $tablet-m) {
     width: calc(50% - 30px);
   }
+
+  @media (max-width: $mobile-xs) {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 
 #main .news .news__item > * + * {
   margin-top: 15px;
+}
+
+#main .news .news__item .news__img {
+  height: 200px;
 }
 
 #main .news .news__item .news__title {

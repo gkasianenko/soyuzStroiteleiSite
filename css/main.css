@@ -618,16 +618,29 @@ legend {
   #main .news .news__item .title-h3 {
     font-size: 15px;
     min-height: 55px; }
+    @media (max-width: 767px) {
+      #main .news .news__item .title-h3 {
+        font-size: 14px; } }
   #main .news .news__item img {
-    max-height: 146px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+    @media (max-width: 600px) {
+      #main .news .news__item img {
+        width: 100%; } }
   @media (max-width: 1200px) {
     #main .news .news__item {
       width: calc(50% - 30px); } }
+  @media (max-width: 600px) {
+    #main .news .news__item {
+      width: 100%;
+      margin: 10px 0; } }
 
 #main .news .news__item > * + * {
   margin-top: 15px; }
+
+#main .news .news__item .news__img {
+  height: 200px; }
 
 #main .news .news__item .news__title {
   text-align: center; }
