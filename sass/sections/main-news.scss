@@ -16,10 +16,24 @@
 
 #main .news .news__item {
   width: calc(33.33% - 30px);
+  padding: 10px 18px;
   margin: 10px 15px;
-  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   background: #0a929c5e;
+
+  & .title-h3 {
+    font-size: 15px;
+    min-height: 55px;
+  }
+
+  & img {
+    max-height: 146px;
+    object-fit: cover;
+  }
 
   @media (max-width: $tablet-m) {
     width: calc(50% - 30px);
